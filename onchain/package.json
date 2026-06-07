@@ -1,0 +1,33 @@
+{
+  "name": "onchain",
+  "version": "1.0.0",
+  "description": "Blockchain audit-log module for TaskManager — Hardhat + Solidity",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:ganache": "hardhat run scripts/deploy.js --network ganache",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "deploy:anvil": "hardhat run scripts/deploy.js --network anvil",
+    "clean": "hardhat clean"
+  },
+  "keywords": [
+    "hardhat",
+    "solidity",
+    "blockchain",
+    "audit-log"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "anvil": "^0.0.6",
+    "dotenv": "^16.6.1"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.2",
+    "hardhat": "^2.28.6"
+  }
+}
